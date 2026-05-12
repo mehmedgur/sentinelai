@@ -43,7 +43,7 @@ done
 
 if [ -z "$PYTHON" ]; then
     echo -e "  ${SARI}⚠️  Python 3.10+ bulunamadı, kuruluyor...${R}"
-    sudo apt update -qq && sudo apt install -y python3 &>/dev/null
+    sudo apt update  && sudo apt install -y python3 &>/dev/null
     PYTHON="python3"
     echo -e "  ${YESIL}✅ Python kuruldu.${R}"
 fi
@@ -57,10 +57,10 @@ fi
 
 if [ -d "$KURULUM_DIR" ]; then
     echo -e "  ${GRI}Mevcut kurulum güncelleniyor...${R}"
-    cd "$KURULUM_DIR" && git pull -q
+    cd "$KURULUM_DIR" && git pull 
     echo -e "  ${YESIL}✅ Güncellendi.${R}"
 else
-    git clone -q https://github.com/mehmedgur/sentinelai.git "$KURULUM_DIR"
+    git clone  https://github.com/mehmedgur/sentinelai.git "$KURULUM_DIR"
     if [ $? -eq 0 ]; then
         echo -e "  ${YESIL}✅ Dosyalar indirildi: $KURULUM_DIR${R}"
     else
