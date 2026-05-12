@@ -1,6 +1,5 @@
 """
 SentinelAI v1.2 - AI Analiz Modülü (Gemini API)
-Yazar: s247003009
 """
 
 import json
@@ -10,7 +9,7 @@ from .utils import yaz, R
 
 GEMINI_URL = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
-    "gemini-pro:generateContent?key={key}"
+    "gemini-1.5-flash:generateContent?key={key}"
 )
 
 
@@ -129,9 +128,9 @@ class AIModul:
 
     def yazdir(self, sonuclar):
         basliklar = {
-            "genel":     ("📋 Genel Güvenlik Yorumu",           R.CYAN),
-            "oneri":     ("💡 Öncelikli İyileştirme Önerileri", R.YESIL),
-            "saldirgan": ("🎯 Saldırgan Perspektifi",           R.SARI),
+            "genel":     ("Genel Güvenlik Yorumu",           R.CYAN),
+            "oneri":     ("Öncelikli İyileştirme Önerileri", R.YESIL),
+            "saldirgan": ("Saldırgan Perspektifi",           R.SARI),
         }
         for anahtar, (baslik, renk) in basliklar.items():
             metin = sonuclar.get(anahtar, "")
