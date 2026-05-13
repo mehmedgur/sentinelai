@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-SentinelAI v1.2 — Tek Giriş Noktası
-Yazar: s247003009
+SentinelAI v1.2 —Giriş Noktası
 """
 
 import sys
