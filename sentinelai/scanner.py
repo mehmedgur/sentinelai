@@ -1,6 +1,6 @@
 """
 SentinelAI v1.2 - Red Team Tarama Modülü
-Yazar: s247003009
+Author:009
 ⚠️  Gerçek saldırı yapılmaz — yalnızca analiz
 """
 
