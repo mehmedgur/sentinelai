@@ -11,11 +11,11 @@ sentinelai/
 │   ├── __init__.py
 │   ├── menu.py               → İnteraktif menü motoru (ortak)
 │   ├── onboarding.py         → İlk çalıştırma, ön bilgilendirme, API key kayıt
-│   ├── analyzer.py           → Blue Team (12 analiz)
-│   ├── scanner.py            → Red Team (10 tarama)
+│   ├── analyzer.py           → Blue Team (11 analiz)
+│   ├── scanner.py            → Red Team (9 tarama)
 │   ├── lynis_module.py       → Lynis denetimi (ayrı modül)
 │   ├── risk_engine.py        → Risk puanlama
-│   ├── ai_module.py          → Claude API entegrasyonu **(Belli Değil)
+│   ├── ai_module.py          → Gemini API entegrasyonu **(Belli Değil)
 │   ├── report.py             → Markdown + JSON rapor
 │   └── utils.py              → Yardımcılar, renkler
 │
