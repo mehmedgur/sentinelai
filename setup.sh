@@ -1,6 +1,6 @@
 #!/bin/bash
 # SentinelAI v1.2 Kurulum Betiği
-# Yazar: s247003009
+# Author: 009
 
 R="\033[0m"
 KALIN="\033[1m"
