@@ -1,6 +1,6 @@
 """
 SentinelAI v1.2 - Menü Motoru
-Yazar: s247003009
+Author:009
 """
 
 from .utils import yaz, bolum, temizle, R
@@ -16,7 +16,7 @@ class Menu:
     """
     İnteraktif ana menü.
     Kullanıcı yalnızca onay verir; geri kalanı script halleder.
-    Yazar: s247003009
+    Author: Mehmed Gurbuz, Goksu Uludas, Bektas Ozkara
     """
 
     def __init__(self, mod, hedef, api_key=None):
