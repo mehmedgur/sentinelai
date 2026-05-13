@@ -1,6 +1,6 @@
 """
 SentinelAI v1.2 - Yardımcı Araçlar
-Yazar: s247003009
+Author: 009
 """
 
 import os
