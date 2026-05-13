@@ -1,6 +1,5 @@
 """
 SentinelAI v1.2 - Blue Team Analiz Modülü
-Yazar: s247003009
 """
 
 import re
