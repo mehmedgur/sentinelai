@@ -1,6 +1,6 @@
 """
 SentinelAI v1.2 - Karşılama ve Kurulum Ekranı
-Yazar: s247003009
+Author: 09
 """
 
 import os
