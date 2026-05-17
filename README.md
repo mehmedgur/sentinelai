@@ -1,6 +1,5 @@
 # sentinelai  {HALA DÜZENLEMELER, DEĞİŞİKLİKLER DEVAM EDİYOR}
 
-AIzaSyBmuZLIrJbPWRqMhgoo_7W_8ho9r4uayOk
 
 sentinelai/
 │
