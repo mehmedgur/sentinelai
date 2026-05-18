@@ -25,7 +25,7 @@ PUAN_MAP = {"KRİTİK":40,"YÜKSEK":25,"ORTA":15,"DÜŞÜK":5,"BİLGİ":1}
 
 
 class RiskMotoru:
-    """Yazar: s247003009"""
+    """Yazar: 009"""
 
     def hesapla(self, bulgular):
         s   = RiskSonuc()
