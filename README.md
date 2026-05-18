@@ -24,23 +24,9 @@ sentinelai/
 ├── setup.py
 └── README.md
 
-python sentinelai_local.py
-        ↓
-onboarding.py → ön bilgilendirme + API key
-        ↓
-menu.py → lokal menü (localhost sabit)
-        ↓
-ilgili modül çalışır, kullanıcı sadece onay verir
 
-python sentinelai_server.py
-        ↓
-onboarding.py → ön bilgilendirme + API key + hedef IP sor
-        ↓
-menu.py → sunucu menüsü (hedef IP ile)
-        ↓
-ilgili modül çalışır, kullanıcı sadece onay verir
 
-```text
+
 🔵 Blue Team Modülü (11 Analiz)
 
 1. SSH Güvenlik Analizi
@@ -98,7 +84,6 @@ ilgili modül çalışır, kullanıcı sadece onay verir
     → Wi-Fi adaptör analizi
     → Açık ağ kontrolü
     → Şifreleme türü denetimi
-```
 
  scanner.py — Red Team Modülü (10 Tarama)
 
@@ -134,11 +119,7 @@ ilgili modül çalışır, kullanıcı sadece onay verir
    → Yanlış yapılandırma kontrolü
    → Eski sürüm tespiti
 
-7. WAF Tespiti
-   → wafw00f
-   → Web Application Firewall kontrolü
-
-8. Ağ Keşfi
+7. Ağ Keşfi
     → arp-scan(Yerel ağ cihaz keşfi)
 
 
@@ -150,7 +131,7 @@ ilgili modül çalışır, kullanıcı sadece onay verir
 SentinelAI modülleri:
 Ana dosyalar:
 
-main.py — CLI giriş noktası, argparse, mod yönetimi
+main.py — CLI giriş noktası
 utils.py — ANSI renkler, tablo, komut çalıştırıcı, yardımcılar
 
 Blue Team (analyzer.py) — 12 analiz:
@@ -187,13 +168,3 @@ Güvenlik Açığı Simülasyonu (Docker soket, SUID, cron, /etc/passwd)
 
 
 
-
-
-
-
-
---------------------------
-*****
--------------****
-*****
---------------
