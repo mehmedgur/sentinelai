@@ -57,7 +57,7 @@ class AIModul:
             url  = GEMINI_URL.format(key=self.api_key)
             veri = json.dumps({
                 "contents": [{"parts": [{"text": istem}]}],
-                "generationConfig": {"temperature": 0.3, "maxOutputTokens": 800},
+                "generationConfig": {"temperature": 0.3, "maxOutputTokens": 2048},
             }).encode()
             req  = urllib.request.Request(
                 url, data=veri,
@@ -129,7 +129,7 @@ class AIModul:
     def yazdir(self, sonuclar):
         basliklar = {
             "genel":     ("Genel Güvenlik Yorumu",           R.CYAN),
-            "oneri":     ("Öncelikli İyileştirme Önerileri", R.YESIL),
+            "oneri":     ("İyileştirme Önerileri", R.YESIL),
             "saldirgan": ("Saldırgan Perspektifi",           R.SARI),
         }
         for anahtar, (baslik, renk) in basliklar.items():
