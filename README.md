@@ -1,4 +1,4 @@
-# sentinelai  {HALA DÜZENLEMELER, DEĞİŞİKLİKLER DEVAM EDİYOR}
+# sentinelai  { DÜZENLEMELER DEVAM EDİYOR}
 
 
 sentinelai/
@@ -86,45 +86,15 @@ sentinelai/
     → Şifreleme türü denetimi
 
  scanner.py — Red Team Modülü (10 Tarama)
-
-1. Port Taraması
-   → nmap
-   → masscan
-   → ss
-   → Açık port analizi
-
-2. NSE Güvenlik Açığı Scriptleri
-   → nmap NSE scriptleri
-   → Bilinen zafiyet kontrolleri
-   → Servis bazlı güvenlik testi
-
-3. Servis Tespiti
-   → nmap servis/version detection
-   → Banner bilgisi
-   → Çalışan servis analizi
-
-
-4. Temel Ağ Erişim Testi
-   → ping
-   → curl
-   → Hedef erişilebilirlik kontrolü
-
-5. Güvenlik Açığı Simülasyonu
-   → Kontrollü zafiyet senaryoları
-   → Eğitim amaçlı saldırı testi
-   → Risk üretimi
-
-6. Nikto Web Sunucu Taraması
-   → Web sunucu açıkları
-   → Yanlış yapılandırma kontrolü
-   → Eski sürüm tespiti
-
-7. Ağ Keşfi
-    → arp-scan(Yerel ağ cihaz keşfi)
-
-
-
-
+        taramalar 
+            ("port",    " Port Taraması",           
+            ("nse",     " NSE Zafiyet Scriptleri",    
+            ("servis",  " Servis Tespiti",             
+            ("zafiyet", " Zafiyet Simülasyonu",        
+            ("nikto",   " Nikto Web Taraması",         
+            ("gobuster"," Gobuster Dizin Taraması",    
+            ("agkesif", " Ağ Keşfi",                  
+            ("pspy",    " Process İzleme (pspy)",      
 
 -----------
 
@@ -134,8 +104,9 @@ Ana dosyalar:
 main.py — CLI giriş noktası
 utils.py — ANSI renkler, tablo, komut çalıştırıcı, yardımcılar
 
-Blue Team (analyzer.py) — 12 analiz:
+Blue Team (analyzer.py) — 11 analiz:
 
+Seneryolar / yol haritası / ana mantık:
 SSH Analizi:
 SSH Portu varsayılan olarak 22 portumu bu bir dezavantajdır bunu değiştirmesi önerilecek veya ssh anahtarı ile giriş seçeneği değerlendirilecek.
 Güvenlik Duvarı (UFW/iptables)
@@ -159,7 +130,6 @@ Rootkit İmza Kontrolü
 Kablosuz Ağ Güvenliği
 Wifi şifrelimi yoksa halka açık wifimi kontrol edilecek
 
-Red Team (scanner.py) — 4 tarama:
 
 Port Taraması (nmap / ss fallback)
 Servis Tespiti (systemctl)
