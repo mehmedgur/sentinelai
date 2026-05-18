@@ -1,6 +1,6 @@
 #!/bin/bash
 # SentinelAI v1.2 Kurulum Betiği
-# Yazar: s247003009
+# Yazar: BGT
 
 R="\033[0m"
 KALIN="\033[1m"
@@ -22,7 +22,7 @@ cat << 'EOF'
  ╚══════╝╚══════╝╚═╝  ╚═══╝   ╚═╝   ╚═╝╚═╝  ╚═══╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝
 EOF
 echo -e "${R}"
-echo -e "  ${GRI}SentinelAI v1.2 Kurulum Betiği  |  Yazar: s247003009${R}"
+echo -e "  ${GRI}SentinelAI v1.2 Kurulum Betiği  |  Yazar: BGT${R}"
 echo -e "  ${GRI}──────────────────────────────────────────────────────${R}\n"
 
 KURULUM_DIR="$HOME/sentinelai"

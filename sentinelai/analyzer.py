@@ -28,7 +28,7 @@ class Sonuc:
 class BlueTeam:
     """
     Blue Team — 11 savunma analizi.
-    Yazar: s247003009
+    Yazar: BGT
     """
 
     def __init__(self, sessiz=False):

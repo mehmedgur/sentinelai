@@ -1,6 +1,6 @@
 """
 SentinelAI v1.2 - Risk Motoru
-Yazar: s247003009
+Yazar: BGT
 """
 
 from dataclasses import dataclass, field

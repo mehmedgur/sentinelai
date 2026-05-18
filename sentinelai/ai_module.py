@@ -9,14 +9,14 @@ from .utils import yaz, R
 
 GEMINI_URL = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
-    "gemini-1.5-flash:generateContent?key={key}"
+    "gemini-2.5-flash:generateContent?key={key}"
 )
 
 
 class AIModul:
     """
     Google Gemini API ile güvenlik bulgularını analiz eder.
-    Yazar: s247003009
+    Yazar: BGT
     """
 
     def __init__(self, api_key):

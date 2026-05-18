@@ -51,7 +51,7 @@ class Sonuc:
 class RedTeam:
     """
     Red Team — 7 saldırı yüzeyi taraması.
-    Yazar: s247003009
+    Yazar: BGT
     """
 
     def __init__(self, hedef="localhost", sessiz=False):

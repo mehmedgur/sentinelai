@@ -1,6 +1,6 @@
 """
 SentinelAI v1.2 - Rapor Modülü
-Yazar: s247003009
+Yazar: BGT
 """
 
 import os

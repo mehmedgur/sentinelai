@@ -1,6 +1,6 @@
 """
 SentinelAI v1.2 - Lynis Denetim Modülü
-Yazar: s247003009
+Yazar: BGT
 """
 
 import re
@@ -20,7 +20,7 @@ class LynisDenetim:
     """
     Lynis sistem sertleştirme denetimi.
     Kurulu değilse otomatik kurar.
-    Yazar: s247003009
+    Yazar: BGT
     """
 
     def calistir(self, sessiz=False):
