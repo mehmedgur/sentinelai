@@ -7,27 +7,21 @@ sentinelai/
 ├── sentinelai_server.py      → Sunucu kullanım giriş noktası
 │
 ├── sentinelai/
-│   ├── __init__.py
-│   ├── menu.py               → İnteraktif menü motoru (ortak)
-│   ├── onboarding.py         → İlk çalıştırma, ön bilgilendirme, API key kayıt
-│   ├── analyzer.py           → Blue Team (11 analiz)
-│   ├── scanner.py            → Red Team (9 tarama)
-│   ├── lynis_module.py       → Lynis denetimi (ayrı modül)
-│   ├── risk_engine.py        → Risk puanlama
-│   ├── ai_module.py          → Gemini API entegrasyonu **(Belli Değil)
-│   ├── report.py             → Markdown + JSON rapor
-│   └── utils.py              → Yardımcılar, renkler
-│
-├── config/
-│   └── sentinelai.conf       → API key, kullanıcı tercihleri
-│
+│    __init__.py
+│    menu.py               → İnteraktif menü motoru (ortak)
+│   onboarding.py         → İlk çalıştırma, ön bilgilendirme, API key kayıt
+│    analyzer.py           → Blue Team (11 analiz)
+│    scanner.py            → Red Team (9 tarama)
+│   lynis_module.py       → Lynis denetimi (ayrı modül)
+│    risk_engine.py        → Risk puanlama
+│    ai_module.py          → Gemini API entegrasyonu **(Belli Değil)
+│    report.py             → Markdown + JSON rapor
+│   utils.py              → Yardımcılar, renkler
 ├── setup.py
-└── README.md
 
 
 
-
-🔵 Blue Team Modülü (11 Analiz)
+ Blue Team Modülü (11 Analiz)
 
 1. SSH Güvenlik Analizi
    → SSH yapılandırması
@@ -135,6 +129,4 @@ Port Taraması (nmap / ss fallback)
 Servis Tespiti (systemctl)
 Yerel Bağlantılar (tüm arayüze açık dinleyiciler)
 Güvenlik Açığı Simülasyonu (Docker soket, SUID, cron, /etc/passwd)
-
-
 
