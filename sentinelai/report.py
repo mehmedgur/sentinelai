@@ -21,7 +21,7 @@ def _donustur(nesne):
 
 
 class RaporOlusturucu:
-    """Yazar: s247003009"""
+    """Yazar: 3009"""
 
     def __init__(self, dizin="./sentinelai_rapor"):
         self.dizin = dizin
@@ -52,7 +52,7 @@ class RaporOlusturucu:
             "# 🛡️ SentinelAI v1.2 — Güvenlik Raporu",
             "",
             f"> **Tarih:** {zaman}  ",
-            f"> **Yapımcı:** s247003009  ",
+            f"> **Yapımcı:** BGT  ",
             f"> ⚠️ Yalnızca etik ve eğitim amaçlıdır.",
             "",
             "---",
