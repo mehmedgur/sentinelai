@@ -1,6 +1,6 @@
-# sentinelai  { DÜZENLEMELER DEVAM EDİYOR}
+# sentinelai 
 
-
+Hiyerarşi:
 sentinelai/
 │
 ├── sentinelai_local.py       → Lokal kullanıcı için giriş noktası
@@ -14,7 +14,7 @@ sentinelai/
 │    scanner.py            → Red Team (9 tarama)
 │   lynis_module.py       → Lynis denetimi (ayrı modül)
 │    risk_engine.py        → Risk puanlama
-│    ai_module.py          → Gemini API entegrasyonu **(Belli Değil)
+│    ai_module.py          → Gemini API entegrasyonu **
 │    report.py             → Markdown + JSON rapor
 │   utils.py              → Yardımcılar, renkler
 ├── setup.py
