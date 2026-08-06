@@ -1,132 +1,224 @@
-# sentinelai 
+# 🛡️ SentinelAI
 
-Hiyerarşi:
+> **Linux Sistemleri İçin Yapay Zekâ Destekli Genel Güvenlik Analiz Aracı**
+
+SentinelAI, Linux sistemlerinin güvenlik durumunu analiz etmek amacıyla geliştirilmiş açık kaynak kodlu bir **Blue Team** ve **Red Team** güvenlik aracıdır.
+
+Proje; sistem güvenlik analizleri, zafiyet taramaları, risk puanlama sistemi ve **Google Gemini API** destekli yapay zekâ önerilerini tek bir terminal uygulamasında bir araya getirir.
+
+---
+
+# 🚀 Özellikler
+
+## 🔵 Blue Team Analizleri
+
+SentinelAI sisteminizi aşağıdaki başlıklarda analiz eder.
+
+* 🔐 SSH Güvenlik Analizi
+* 🔥 Güvenlik Duvarı (UFW / iptables)
+* 🌐 Ağ ve Aktif Bağlantılar
+* ⚙️ Çalışan Servis Analizi
+* 👤 Kullanıcı ve Yetki Analizi
+* 🧠 Kernel (sysctl) Güvenlik Kontrolleri
+* 📦 Güvenlik Güncellemeleri
+* 📜 Audit ve Journal Log Analizi
+* ❌ Başarısız Giriş Denemeleri
+* ☠️ Rootkit İmza Kontrolü
+* 📶 Kablosuz Ağ Güvenliği
+
+Toplam **11 farklı güvenlik analizi** gerçekleştirilmektedir.
+
+---
+
+## 🔴 Red Team Taramaları
+
+Blue Team analizlerinin yanında temel saldırı yüzeyi keşfi için aşağıdaki taramalar yapılabilir.
+
+* Nmap Port Taraması
+* Servis Tespiti
+* NSE Güvenlik Scriptleri
+* Ağ Keşfi
+* Nikto Web Sunucusu Analizi
+* Gobuster Dizin Taraması
+* Process İzleme (pspy)
+* Yerel Servis Analizi
+* Temel Zafiyet Simülasyonu
+
+Toplam **9 farklı Red Team taraması** bulunmaktadır.
+
+---
+
+# 🤖 Yapay Zekâ Desteği
+
+SentinelAI, **Google Gemini API** kullanarak elde edilen analiz sonuçlarını yorumlar.
+
+Yapay zekâ;
+
+* Bulunan güvenlik açıklarını açıklar.
+* Risk seviyesini yorumlar.
+* Güvenlik sertleştirme (Hardening) önerileri sunar.
+* Sistem yöneticileri için anlaşılır raporlar oluşturur.
+
+---
+
+# 📊 Risk Puanlama Sistemi
+
+Her analiz sonucunda sistemin güvenlik seviyesi puanlanır.
+
+| Puan   | Durum       |
+| ------ | ----------- |
+| 90-100 | Çok Güvenli |
+| 70-89  | Güvenli     |
+| 50-69  | Orta Risk   |
+| 30-49  | Yüksek Risk |
+| 0-29   | Kritik      |
+
+---
+
+# 📑 Oluşturulan Raporlar
+
+Analiz sonunda otomatik olarak;
+
+* Markdown (.md)
+* JSON (.json)
+
+formatlarında rapor oluşturulur.
+
+Raporda;
+
+* Tespit edilen güvenlik açıkları
+* Risk puanı
+* Yapay zekâ önerileri
+* Alınması gereken aksiyonlar
+
+yer almaktadır.
+
+---
+
+# 📂 Proje Yapısı
+
+```text
 sentinelai/
 │
-├── sentinelai_local.py       → Lokal kullanıcı için giriş noktası
-├── sentinelai_server.py      → Sunucu kullanım giriş noktası
-│
-├── sentinelai/
-│    __init__.py
-│    menu.py               → İnteraktif menü motoru (ortak)
-│   onboarding.py         → İlk çalıştırma, ön bilgilendirme, API key kayıt
-│    analyzer.py           → Blue Team (11 analiz)
-│    scanner.py            → Red Team (9 tarama)
-│   lynis_module.py       → Lynis denetimi (ayrı modül)
-│    risk_engine.py        → Risk puanlama
-│    ai_module.py          → Gemini API entegrasyonu **
-│    report.py             → Markdown + JSON rapor
-│   utils.py              → Yardımcılar, renkler
+├── sentinelai_local.py      # Lokal kullanım
+├── sentinelai_server.py     # Sunucu kullanımı
 ├── setup.py
+│
+└── sentinelai/
+    ├── __init__.py
+    ├── menu.py
+    ├── onboarding.py
+    ├── analyzer.py
+    ├── scanner.py
+    ├── lynis_module.py
+    ├── risk_engine.py
+    ├── ai_module.py
+    ├── report.py
+    └── utils.py
+```
+
+---
+
+# 🔍 Blue Team Analizleri
+
+✅ SSH yapılandırması
+
+✅ Root Login kontrolü
+
+✅ SSH Port analizi
+
+✅ Güvenlik Duvarı denetimi
+
+✅ UFW / iptables kontrolü
+
+✅ Aktif bağlantılar
+
+✅ Dinleyen servisler
+
+✅ Servis durumları
+
+✅ Kullanıcı hesapları
+
+✅ sudo yetkileri
+
+✅ Başarısız giriş denemeleri
+
+✅ Kernel Hardening
+
+✅ sysctl güvenlik parametreleri
+
+✅ Güvenlik güncellemeleri
+
+✅ Audit Log analizi
+
+✅ Journal Log analizi
+
+✅ Rootkit imza kontrolü
+
+✅ Kablosuz ağ güvenliği
+
+---
+
+# ⚔️ Red Team Taramaları
+
+* Port Taraması
+* Servis Tespiti
+* Ağ Keşfi
+* NSE Script Analizi
+* Nikto Web Taraması
+* Gobuster Dizin Taraması
+* Process İzleme (pspy)
+* Yerel Ağ Analizi
+* Temel Zafiyet Simülasyonu
+
+---
+
+# 🛠️ Kullanılan Teknolojiler
+
+* Python 3
+* Nmap
+* UFW
+* iptables
+* systemctl
+* journalctl
+* ss
+* Lynis
+* Google Gemini API
+
+---
+
+# 🎯 Yol Haritası
+
+* [x] Blue Team Analizleri
+* [x] Red Team Taramaları
+* [x] Risk Puanlama Sistemi
+* [x] AI Destekli Güvenlik Önerileri
+* [x] Markdown ve JSON Raporlama
+* [ ] Bu özellik v1.5 sürümünde geliştirilmiştir.
+* [ ] Bu özellik v1.5 sürümünde geliştirilmiştir.
+* [ ] Bu özellik v1.5 sürümünde geliştirilmiştir.
+* [ ] Bu özellik v1.5 sürümünde geliştirilmiştir.
+* [ ] Bu özellik v1.5 sürümünde geliştirilmiştir.
+
+---
+
+# 🤝 Katkıda Bulunma
+
+Katkılarınızı memnuniyetle karşılıyorum.
+
+Yeni özellik ekleyebilir, hata bildirebilir veya Pull Request göndererek projeye katkıda bulunabilirsiniz.
+
+---
+
+# 📜 Lisans
+
+Bu proje **MIT License** ile lisanslanacaktır.
+
+---
+
+# 👨‍💻 Geliştirici
 
 
+3 Bilişim Güvenliği öğrencisi Dönem Projesi olarak yaptı.
 
- Blue Team Modülü (11 Analiz)
-
-1. SSH Güvenlik Analizi
-   → SSH yapılandırması
-   → Root login kontrolü
-   → Zayıf ayar tespiti
-
-2. Güvenlik Duvarı Analizi
-   → UFW kontrolü
-   → iptables kuralları
-   → Açık port denetimi
-
-3. Ağ ve Bağlantı Analizi
-   → ss ile aktif bağlantılar
-   → Dinleyen servisler
-   → Şüpheli bağlantılar
-
-4. Aktif Servis Analizi
-   → systemctl servis kontrolü
-   → Gereksiz servis tespiti
-   → Kritik servis durumu
-
-5. Kullanıcı ve Yetki Analizi
-   → who / last kontrolü
-   → Şüpheli kullanıcılar
-   → Başarısız giriş denemeleri
-   → sudo yetkileri
-
-6. Kritik Dosya İzin Analizi
-   → passwd/shadow kontrolü
-   → chmod izin denetimi
-   → SUID/SGID dosyaları
-
-7. Kernel ve Sistem Parametreleri
-   → sysctl kontrolü
-   → Kernel hardening analizi
-   → IPv4/IPv6 güvenlik ayarları
-
-8. Güvenlik Güncelleme Analizi
-   → Güncel olmayan paketler
-   → Kritik güvenlik yamaları
-   → Paket yöneticisi kontrolü
-
-9. Audit ve Log Analizi
-   → journalctl incelemesi
-   → Syslog analizi
-   → Kritik hata kayıtları
-
-10. Rootkit ve Zararlı İmza Kontrolü
-    → Rootkit taraması
-    → Şüpheli process kontrolü
-    → pspy süreç izleme
-
-11. Kablosuz Ağ Güvenliği
-    → Wi-Fi adaptör analizi
-    → Açık ağ kontrolü
-    → Şifreleme türü denetimi
-
- scanner.py — Red Team Modülü (10 Tarama)
-        taramalar 
-            ("port",    " Port Taraması",           
-            ("nse",     " NSE Zafiyet Scriptleri",    
-            ("servis",  " Servis Tespiti",             
-            ("zafiyet", " Zafiyet Simülasyonu",        
-            ("nikto",   " Nikto Web Taraması",         
-            ("gobuster"," Gobuster Dizin Taraması",    
-            ("agkesif", " Ağ Keşfi",                  
-            ("pspy",    " Process İzleme (pspy)",      
-
------------
-
-SentinelAI modülleri:
-Ana dosyalar:
-
-main.py — CLI giriş noktası
-utils.py — ANSI renkler, tablo, komut çalıştırıcı, yardımcılar
-
-Blue Team (analyzer.py) — 11 analiz:
-
-Seneryolar / yol haritası / ana mantık:
-SSH Analizi:
-SSH Portu varsayılan olarak 22 portumu bu bir dezavantajdır bunu değiştirmesi önerilecek veya ssh anahtarı ile giriş seçeneği değerlendirilecek.
-Güvenlik Duvarı (UFW/iptables)
-UFW veya iptables kullanılıyormu kontrol edecek evetse + değilse - puan alacak
-Aktif Servisler
-Kullanıcı manuel olarak kontrol edilmesini istiyormu istemiyormu ona bakılacak gereksiz önbelleği tutan servislerin temizlenmesini istiyormu istemiyormu kullanıcıya sorulacak.
-Kullanıcı Hesapları
-aktif olarak kullanıcıdan yetkisi olan kullanıcı hesaplarını listeleyecek
-Çekirdek Parametreleri
-bu parametreleri belirle
-Kritik Dosya İzinleri(ÇIKARILDI)
-Güvenlik Güncellemeleri
-Güncellemeler kontrol edilecek değilse güncellenmesi istenecek veya otomatik güncellenecek
-Audit / Kritik Log Olayları
-Log olaylarında özellikle belirli parametreler mesela wifi veya ethernet sağlıklı çalışıyormu apache veri tabanı veya birkaç kritik linux uygulamasının çalılıp çalışmadığı status ile kontrol edilecek
-Syslog & Log Yönetimi
-aktifmi değişmi değilse açılacak
-Başarısız Giriş Denemeleri
-son 25 başarısız giriş denemesi ekranda gösterilecek ve hangi ip hangi tarihden yapıldığı gösterilebilecek
-Rootkit İmza Kontrolü
-Kablosuz Ağ Güvenliği
-Wifi şifrelimi yoksa halka açık wifimi kontrol edilecek
-
-
-Port Taraması (nmap / ss fallback)
-Servis Tespiti (systemctl)
-Yerel Bağlantılar (tüm arayüze açık dinleyiciler)
-Güvenlik Açığı Simülasyonu (Docker soket, SUID, cron, /etc/passwd)
-
+⭐ Projeyi beğendiyseniz geri donut ve yıldız vermeyi unutmayın.
