@@ -1,10 +1,15 @@
-# 🛡️ SentinelAI
+# SentinelAI
 
 > **Linux Sistemleri İçin Yapay Zekâ Destekli Genel Güvenlik Analiz Aracı**
 
 SentinelAI, Linux sistemlerinin güvenlik durumunu analiz etmek amacıyla geliştirilmiş açık kaynak kodlu bir **Blue Team** ve **Red Team** güvenlik aracıdır.
 
 Proje; sistem güvenlik analizleri, zafiyet taramaları, risk puanlama sistemi ve **Google Gemini API** destekli yapay zekâ önerilerini tek bir terminal uygulamasında bir araya getirir.
+Bu proje 2025-2026 Dönemi Ankara Bilim Üniversitesi Bilişim Güvenliği Teknolojisi olan 3 öğrencinin emekleriyle bir araya getirilip dönem projesi olarak sunulmuştur
+Emeği Geçenler: Kod Tarafı: Mehmed Gürbüz
+Görünüm Düzenleme: C. O., Göksu U.
+Sunum: Bektaş C. O., Göksu U.
+
 
 ---
 
